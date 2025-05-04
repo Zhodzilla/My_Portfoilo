@@ -7,24 +7,33 @@ def project_page() -> rx.Component:
             rx.avatar(src="/Zhod.jpg", fallback="RX", size="8"),
             rx.heading("Discord Bot", size="9"),
             rx.text(""),
-            rx.hstack(
+            rx.stack(
                 rx.image(
                     src="/project_1.jpg", 
                     width="100px", 
-                    height="auto"
+                    hight="auto"
                     ),
-                    
-                    
-                    
-                    
-                    
-                    
+                rx.image(
+                    src="/project_3.jpg", 
+                    width="100px", 
+                    hight="auto"
                     ),
-
-            spacing="3",
+                rx.image(
+                    src="/project_2.jpg", 
+                    width="100px", 
+                    hight="auto"
+                    ),
+                
+                direction="row",
+                spacing="3",
+                align="center",
+                justify="center"
+                ),
+            
+            spacing="5",
             justify="center",
             align="center",
-            direction="row",
-            hight="auto",
+            text_align="center",
+            min_height="85vh",
         )
     return base_page(my_child)
