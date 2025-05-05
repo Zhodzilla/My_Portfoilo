@@ -17,10 +17,12 @@ def about_page() -> rx.Component:
                 border_width="3px",
                 justify="center",
                 align="center",
+                width="50%",
             ),
+            spacing="5",
             justify="center",
             align="center",
-            width="30%",
-            hight="100%",
+            text_align="center",
+            min_height="85vh",
         )
     return base_page(my_child)

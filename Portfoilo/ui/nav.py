@@ -1,5 +1,7 @@
 import reflex as rx
 
+from .. import navigation
+
 def navbar_link(text: str, url: str) -> rx.Component:
     return rx.link(
         rx.text(text, size="4", weight="medium"), href=url
@@ -23,8 +25,8 @@ def navbar_dropdown() -> rx.Component:
                     align_items="center",
                 ),
                 rx.hstack(
-                    navbar_link("Home", "/"),
-                    navbar_link("About", "/about"),
+                    navbar_link("Home", navigation.routes.HOME_ROUTE),
+                    navbar_link("About", navigation.routes.ABOUT_ROUTE),
                     rx.menu.root(
                         rx.menu.trigger(
                             rx.button(
@@ -40,12 +42,13 @@ def navbar_dropdown() -> rx.Component:
                             ),
                         ),
                         rx.menu.content(
-                            rx.menu.item("Discor Bot"),
+                            rx.menu.item("Discor Bot", 
+                                         on_click=navigation.NavState.to_project1),
                             rx.menu.item("Service 2"),
                             rx.menu.item("Service 3"),
                         ),
                     ),
-                    navbar_link("Contact", "/contact"),
+                    navbar_link("Contact", navigation.routes.CONTACT_ROUTE),
                     justify="end",
                     spacing="5",
                 ),
@@ -72,17 +75,18 @@ def navbar_dropdown() -> rx.Component:
                         rx.icon("menu", size=30)
                     ),
                     rx.menu.content(
-                        rx.menu.item("Home"),
+                        rx.menu.item("Home", 
+                                     on_click=navigation.NavState.to_home),
                         rx.menu.sub(
-                            rx.menu.sub_trigger("Services"),
+                            rx.menu.sub_trigger("Project"),
                             rx.menu.sub_content(
-                                rx.menu.item("Discor Bot"),
+                                rx.menu.item("Discor Bot",
+                                             on_click=navigation.NavState.to_project1),
                                 rx.menu.item("Service 2"),
                                 rx.menu.item("Service 3"),
                             ),
                         ),
                         rx.menu.item("About"),
-                        rx.menu.item("Project"),
                         rx.menu.item("Contact"),
                     ),
                     justify="end",
