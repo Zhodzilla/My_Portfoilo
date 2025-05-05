@@ -12,18 +12,18 @@ def navbar_dropdown() -> rx.Component:
             rx.hstack(
                 rx.hstack(
                     rx.image(
-                        src="/logo.jpg",
+                        src="/Zhod.jpg",
                         width="2.25em",
                         height="auto",
                         border_radius="25%",
                     ),
                     rx.heading(
-                        "Reflex", size="7", weight="bold"
+                        "", size="7", weight="bold"
                     ),
                     align_items="center",
                 ),
                 rx.hstack(
-                    navbar_link("Home", "/#"),
+                    navbar_link("Home", "/"),
                     navbar_link("About", "/about"),
                     rx.menu.root(
                         rx.menu.trigger(
@@ -45,7 +45,7 @@ def navbar_dropdown() -> rx.Component:
                             rx.menu.item("Service 3"),
                         ),
                     ),
-                    navbar_link("Contact", "/#"),
+                    navbar_link("Contact", "/contact"),
                     justify="end",
                     spacing="5",
                 ),

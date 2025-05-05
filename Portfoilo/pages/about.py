@@ -12,15 +12,15 @@ def about_page() -> rx.Component:
                 "I want to try coding for a while now and that make me start self learn how to code. " \
                 "I been learning for 2-3 month and have a simple knowledge of python, Linux, git and Docker." \
                 " And now i want to take the knowledge i have learned and develop it further.",
-                margin_top="0.5em",
                 ),
                 padding="1em",
-                border_width="1px",
+                border_width="3px",
+                justify="center",
+                align="center",
             ),
-            spacing="5",
             justify="center",
             align="center",
-            min_height="85vh",
+            width="30%",
+            hight="100%",
         )
     return base_page(my_child)
-
