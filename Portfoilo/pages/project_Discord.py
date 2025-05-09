@@ -17,14 +17,9 @@ def project_page() -> rx.Component:
                 width="50%",
                     ),
 
-            rx.stack(
+            rx.hstack(
                 rx.image(
                     src="/project_1.jpg", 
-                    width="100%", 
-                    hight="auto"
-                    ),
-                rx.image(
-                    src="/project_3.jpg", 
                     width="100%", 
                     hight="auto"
                     ),
@@ -33,17 +28,27 @@ def project_page() -> rx.Component:
                     width="100%", 
                     hight="auto"
                     ),
+                rx.image(
+                    src="/project_3.jpg", 
+                    width="100%", 
+                    hight="auto",
+                    max_width="600px",
+                    object_fit="contain",
+                    ),
                 
-                direction="row",
-                spacing="3",
-                align="center",
-                justify="center"
+                justify="center",  # center horizontally
+                spacing="4",       # space between images
+                width="100%",
+                max_width="600px",
+                margin="auto",     # center the row itself on the page
+                overflow="hidden",
+                wrap="wrap",
                 ),
             
             spacing="5",
             justify="center",
             align="center",
-            text_align="center",
             min_height="85vh",
+            wrap="wrap",
         )
     return base_page(my_child)
