@@ -32,4 +32,4 @@ jobs:
         with:
           python-version: '3.9'
       - name: Run Python script
-        run: python your_script.py
+        run: python Portfoilo.py
