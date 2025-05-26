@@ -12,7 +12,7 @@ import { jsx } from "@emotion/react"
 
 
 
-export function Flex_db53379d98bc72d955ca3854ae00e569 () {
+export function Flex_789df59cccb3194e21be9fd557b69c20 () {
   
   const reflex___state____state__portfoilo___contact___state____contact_state = useContext(StateContexts.reflex___state____state__portfoilo___contact___state____contact_state)
 
@@ -29,9 +29,9 @@ jsx(
 RadixThemesHeading,
 {size:"6"},
 "Contact Entires"
-,),reflex___state____state__portfoilo___contact___state____contact_state.entries.map((contact,index_bb6d02855468345a)=>(jsx(
+,),reflex___state____state__portfoilo___contact___state____contact_state.entries.map((contact,index_225e1a108f6106ec)=>(jsx(
 RadixThemesBox,
-{css:({ ["padding"] : "1em" }),key:index_bb6d02855468345a},
+{css:({ ["padding"] : "1em" }),key:index_225e1a108f6106ec},
 jsx(
 RadixThemesHeading,
 {},
@@ -166,7 +166,7 @@ jsx(Dropdownmenu__item_dd3d9dadeff58b50d1ccdb3b962e4bc9,{},)
 ,),),),),),jsx(
 RadixThemesBox,
 {css:({ ["padding"] : "1em", ["width"] : "100%" })},
-jsx(Flex_db53379d98bc72d955ca3854ae00e569,{},)
+jsx(Flex_789df59cccb3194e21be9fd557b69c20,{},)
 ,),jsx(
 RadixThemesFlex,
 {css:({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%" })},

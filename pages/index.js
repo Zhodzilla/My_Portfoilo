@@ -12,24 +12,6 @@ import { jsx } from "@emotion/react"
 
 
 
-export function Button_afa927bc33b2c9625a660d7e07a78766 () {
-  
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-
-
-
-
-  
-  return (
-    jsx(
-RadixThemesButton,
-{css:({ ["color"] : ((resolvedColorMode === "light") ? "white" : "black"), ["backgroundColor"] : ((resolvedColorMode === "light") ? "black" : "white") })},
-"I'm unknow dev"
-,)
-  )
-}
-
 export function Link_4a1259d48b1c38e48ba5dfd1772eb789 () {
   
   const { resolvedColorMode } = useContext(ColorModeContext)
@@ -51,6 +33,24 @@ RadixThemesButton,
 {css:({ ["color"] : ((resolvedColorMode === "light") ? "white" : "black"), ["backgroundColor"] : ((resolvedColorMode === "light") ? "black" : "white") })},
 "Github"
 ,),),)
+  )
+}
+
+export function Button_afa927bc33b2c9625a660d7e07a78766 () {
+  
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+
+
+
+
+  
+  return (
+    jsx(
+RadixThemesButton,
+{css:({ ["color"] : ((resolvedColorMode === "light") ? "white" : "black"), ["backgroundColor"] : ((resolvedColorMode === "light") ? "black" : "white") })},
+"I'm unknow dev"
+,)
   )
 }
 
